@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Title</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+		<link href="{{ STATIC_URL }}css/main.css" rel="stylesheet" media="screen">
+		<link href="{{ STATIC_URL }}css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link href="{{ STATIC_URL }}css/bootstrap-tagmanager.css" rel="stylesheet" media="screen">
+		<link href="{{ STATIC_URL }}css/jquery-ui.css" rel="stylesheet" />
+
+		<script type="text/javascript" src="{{ STATIC_URL }}js/jquery-1.9.1.min.js" ></script>
+		<script type="text/javascript" src="{{ STATIC_URL }}js/jquery-ui-1.9.2.custom.min.js" ></script>
+		<script type="text/javascript" src="{{ STATIC_URL }}js/django-coockies.js" ></script>
+
+		<script src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
+
+		{% block extra_js %}
+		{% endblock %}
+	</head>
+	<body class="body">
+		<div class="noise-wrapper">
+			<div class="container-fluid">
+				{% include 'menu.html' %}
+
+				<div class="separator-shadow-bottom">
+					<img alt="" src="{{ STATIC_URL }}/img/shadow-separator-wide-bottom.png">
+				</div>
+				<div class="container">
+					{% block content %}
+					{% endblock %}
+				</div>
+
+			</div>
+	</body>
+</html>
