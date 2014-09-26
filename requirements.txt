@@ -1,0 +1,2 @@
+# Link to other requirements files in requirements folder
+-r requirements/production.txt
