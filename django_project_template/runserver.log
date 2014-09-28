@@ -1,0 +1,131 @@
+Traceback (most recent call last):
+  File "./manage.py", line 10, in <module>
+    execute_from_command_line(sys.argv)
+  File "/home/dpi/venvs/AmazonBook_venv/lib/python3.3/site-packages/django/core/management/__init__.py", line 399, in execute_from_command_line
+    utility.execute()
+  File "/home/dpi/venvs/AmazonBook_venv/lib/python3.3/site-packages/django/core/management/__init__.py", line 392, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "/home/dpi/venvs/AmazonBook_venv/lib/python3.3/site-packages/django/core/management/__init__.py", line 272, in fetch_command
+    klass = load_command_class(app_name, subcommand)
+  File "/home/dpi/venvs/AmazonBook_venv/lib/python3.3/site-packages/django/core/management/__init__.py", line 75, in load_command_class
+    module = import_module('%s.management.commands.%s' % (app_name, name))
+  File "/home/dpi/venvs/AmazonBook_venv/lib/python3.3/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1583, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1564, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1531, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 586, in _check_name_wrapper
+  File "<frozen importlib._bootstrap>", line 1023, in load_module
+  File "<frozen importlib._bootstrap>", line 1004, in load_module
+  File "<frozen importlib._bootstrap>", line 562, in module_for_loader_wrapper
+  File "<frozen importlib._bootstrap>", line 869, in _load_module
+  File "<frozen importlib._bootstrap>", line 313, in _call_with_frames_removed
+  File "/home/dpi/venvs/AmazonBook_venv/lib/python3.3/site-packages/django/core/management/commands/runserver.py", line 10, in <module>
+    from django.core.servers.basehttp import run, get_internal_wsgi_application
+  File "/home/dpi/venvs/AmazonBook_venv/lib/python3.3/site-packages/django/core/servers/basehttp.py", line 20, in <module>
+    from django.core.wsgi import get_wsgi_application
+  File "/home/dpi/venvs/AmazonBook_venv/lib/python3.3/site-packages/django/core/wsgi.py", line 1, in <module>
+    from django.core.handlers.wsgi import WSGIHandler
+  File "/home/dpi/venvs/AmazonBook_venv/lib/python3.3/site-packages/django/core/handlers/wsgi.py", line 11, in <module>
+    from django.core.handlers import base
+  File "/home/dpi/venvs/AmazonBook_venv/lib/python3.3/site-packages/django/core/handlers/base.py", line 12, in <module>
+    from django.db import connections, transaction
+  File "/home/dpi/venvs/AmazonBook_venv/lib/python3.3/site-packages/django/db/__init__.py", line 83, in <module>
+    signals.request_started.connect(reset_queries)
+  File "/home/dpi/venvs/AmazonBook_venv/lib/python3.3/site-packages/django/dispatch/dispatcher.py", line 88, in connect
+    if settings.DEBUG:
+  File "/home/dpi/venvs/AmazonBook_venv/lib/python3.3/site-packages/django/conf/__init__.py", line 54, in __getattr__
+    self._setup(name)
+  File "/home/dpi/venvs/AmazonBook_venv/lib/python3.3/site-packages/django/conf/__init__.py", line 49, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/home/dpi/venvs/AmazonBook_venv/lib/python3.3/site-packages/django/conf/__init__.py", line 151, in __init__
+    raise ImproperlyConfigured("The SECRET_KEY setting must not be empty.")
+django.core.exceptions.ImproperlyConfigured: The SECRET_KEY setting must not be empty.
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 85, in run
+    self.result = application(self.environ, self.start_response)
+  File "/usr/lib/python2.7/dist-packages/django/contrib/staticfiles/handlers.py", line 67, in __call__
+    return self.application(environ, start_response)
+  File "/usr/lib/python2.7/dist-packages/django/core/handlers/wsgi.py", line 241, in __call__
+    response = self.get_response(request)
+  File "/usr/lib/python2.7/dist-packages/django/core/handlers/base.py", line 82, in get_response
+    urlconf = settings.ROOT_URLCONF
+  File "/usr/lib/python2.7/dist-packages/django/utils/functional.py", line 185, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'Settings' object has no attribute 'ROOT_URLCONF'
+[26/Sep/2014 14:07:11] "GET / HTTP/1.1" 500 59
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 85, in run
+    self.result = application(self.environ, self.start_response)
+  File "/usr/lib/python2.7/dist-packages/django/contrib/staticfiles/handlers.py", line 67, in __call__
+    return self.application(environ, start_response)
+  File "/usr/lib/python2.7/dist-packages/django/core/handlers/wsgi.py", line 241, in __call__
+    response = self.get_response(request)
+  File "/usr/lib/python2.7/dist-packages/django/core/handlers/base.py", line 82, in get_response
+    urlconf = settings.ROOT_URLCONF
+  File "/usr/lib/python2.7/dist-packages/django/utils/functional.py", line 185, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'Settings' object has no attribute 'ROOT_URLCONF'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 85, in run
+    self.result = application(self.environ, self.start_response)
+  File "/usr/lib/python2.7/dist-packages/django/contrib/staticfiles/handlers.py", line 67, in __call__
+    return self.application(environ, start_response)
+  File "/usr/lib/python2.7/dist-packages/django/core/handlers/wsgi.py", line 241, in __call__
+    response = self.get_response(request)
+  File "/usr/lib/python2.7/dist-packages/django/core/handlers/base.py", line 82, in get_response
+    urlconf = settings.ROOT_URLCONF
+  File "/usr/lib/python2.7/dist-packages/django/utils/functional.py", line 185, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'Settings' object has no attribute 'ROOT_URLCONF'
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 85, in run
+    self.result = application(self.environ, self.start_response)
+  File "/usr/lib/python2.7/dist-packages/django/contrib/staticfiles/handlers.py", line 67, in __call__
+    return self.application(environ, start_response)
+  File "/usr/lib/python2.7/dist-packages/django/core/handlers/wsgi.py", line 241, in __call__
+    response = self.get_response(request)
+  File "/usr/lib/python2.7/dist-packages/django/core/handlers/base.py", line 82, in get_response
+    urlconf = settings.ROOT_URLCONF
+  File "/usr/lib/python2.7/dist-packages/django/utils/functional.py", line 185, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'Settings' object has no attribute 'ROOT_URLCONF'
+[26/Sep/2014 14:07:15] "GET / HTTP/1.1" 500 59
+Traceback (most recent call last):
+  File "/home/dpi/venvs/AmazonBook_venv/lib/python3.3/site-packages/django/conf/__init__.py", line 128, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/home/dpi/venvs/AmazonBook_venv/lib/python3.3/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1583, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1564, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1511, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 313, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1583, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1564, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1511, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 313, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1583, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1564, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1528, in _find_and_load_unlocked
+ImportError: No module named 'django_template_project'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./manage.py", line 10, in <module>
+    execute_from_command_line(sys.argv)
+  File "/home/dpi/venvs/AmazonBook_venv/lib/python3.3/site-packages/django/core/management/__init__.py", line 399, in execute_from_command_line
+    utility.execute()
+  File "/home/dpi/venvs/AmazonBook_venv/lib/python3.3/site-packages/django/core/management/__init__.py", line 392, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "/home/dpi/venvs/AmazonBook_venv/lib/python3.3/site-packages/django/core/management/__init__.py", line 261, in fetch_command
+    commands = get_commands()
+  File "/home/dpi/venvs/AmazonBook_venv/lib/python3.3/site-packages/django/core/management/__init__.py", line 107, in get_commands
+    apps = settings.INSTALLED_APPS
+  File "/home/dpi/venvs/AmazonBook_venv/lib/python3.3/site-packages/django/conf/__init__.py", line 54, in __getattr__
+    self._setup(name)
+  File "/home/dpi/venvs/AmazonBook_venv/lib/python3.3/site-packages/django/conf/__init__.py", line 49, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/home/dpi/venvs/AmazonBook_venv/lib/python3.3/site-packages/django/conf/__init__.py", line 132, in __init__
+    % (self.SETTINGS_MODULE, e)
+ImportError: Could not import settings 'django_template_project.settings.local' (Is it on sys.path? Is there an import error in the settings file?): No module named 'django_template_project'
