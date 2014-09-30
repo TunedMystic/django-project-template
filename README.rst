@@ -66,13 +66,13 @@ Services expect a requirements.txt file in the root of projects.*
 Environment Variables
 ======================
 
-DJANGO_PROJECT_HOST
-DJANGO_PROJECT_PORT
-LOCAL_MYSQL_DB_NAME
-LOCAL_MYSQL_DB_USERNAME
-LOCAL_MYSQL_DB_PASSWORD
-LOCAL_MYSQL_DB_HOST
-LOCAL_MYSQL_DB_PORT
+#. DJANGO_PROJECT_HOST
+#. DJANGO_PROJECT_PORT
+#. LOCAL_MYSQL_DB_NAME
+#. LOCAL_MYSQL_DB_USERNAME
+#. LOCAL_MYSQL_DB_PASSWORD
+#. LOCAL_MYSQL_DB_HOST
+#. LOCAL_MYSQL_DB_PORT
 
 For Linux add lines into your ~/.profile file:
 <env_variable>=<value> && export <env_variable>
