@@ -8,7 +8,7 @@ DEBUG = False
 
 TEMPLATE_DEBUG = DEBUG
 
-ROOT_URLCONF = django_project_template.urls
+ROOT_URLCONF = "django_project_template.urls"
 
 MANAGERS = ADMINS
 
