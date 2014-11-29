@@ -3,13 +3,7 @@ import os
 import sys
 
 if __name__ == "__main__":
-    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "django_project_template.settings.local")
-
-    try:
-        import pymysql
-        pymysql.install_as_MySQLdb()
-    except ImportError:
-        pass
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "{{ project_name }}.settings.local")
 
     from django.core.management import execute_from_command_line
 
