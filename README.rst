@@ -2,15 +2,9 @@
 django-project-template
 ========================
 
-A project template for Django 1.6 and Python3. 
+A project template for Django 1.7 and Python2.7. 
 
 This project contains the following libraries:
-
-Python
-------
-#. PyMySQL (for MySQL databases)
-#. Pillow (Python Image Library for Python3)
-#. django-simple-captcha (for protecting comment forms)
 
 Web
 ---
@@ -22,7 +16,7 @@ It has test application with home and login/logout views.
 
 To use this project follow these steps:
 
-#. Create your working environment with Python 3 (http://www.it-recipes.com/articles/blog/200)
+#. Create your working environment (http://www.it-recipes.com/articles/blog/200)
 #. Install Django 
 #. Create the new project using the django-project-template
 #. Install additional dependencie
@@ -37,7 +31,7 @@ Installing Django
 
 To install Django in the new virtual environment, run the following command::
 
-    $ pip install django==1.6
+    $ pip install django==1.7
 
 Creating your project
 =====================
